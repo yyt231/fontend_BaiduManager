@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <title>百度新闻</title>
+    <link href="css/normalize.css" type="text/css" rel="stylesheet"/>
+    <link href="font/iconfont.css" type="text/css" rel="stylesheet"/>
+    <link href="css/main.css" type="text/css" rel="stylesheet"/>
+
+</head>
+<body>
+<div class="container">
+    <header class="cf">
+        <a href="#" class="logo"><span class="iconfont">&#xe68b;</span></a>
+        <a href="#" class="user"><span class="iconfont">&#xe607;</span></a>
+        <a href="#" class="user"><span class="iconfont">&#xe616;</span></a>
+        <a href="#" class="user"><span class="iconfont">&#xe623;</span></a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">精选</a><i></i></li>
+            <li><a href="#">百家</a><i></i></li>
+            <li><a href="#">本地</a><i></i></li>
+            <li><a href="#">娱乐</a><i></i></li>
+            <li><a href="#">社会</a><i></i></li>
+            <li><a href="#">军事</a><i></i></li>
+            <li><a href="#">女人</a><i></i></li>
+            <li><a href="#">搞笑</a><i></i></li>
+            <li><a href="#">互联网</a><i></i></li>
+            <li><a href="#">科技</a><i></i></li>
+            
+        </ul>
+    </nav>
+    <article class="article-main">
+        <ul class="news-lists">
+            <!--<li class="news-list">-->
+                <!--<div class="news-img">-->
+                    <!--<img src="img/img.JPG" alt="大盘昨一度冲上3300点 外围多重消息或影响A股走势 " width="100%"/>-->
+                <!--</div>-->
+                <!--<div class="news-content">-->
+                    <!--<h1>大盘昨一度冲上3300点 外围多重消息或影响A股走势 </h1>-->
+                    <!--<p>-->
+                        <!--<span class="news-time">2016年11月30日10:38:43</span>-->
+                        <!--<span class="news-src">网易</span>-->
+                    <!--</p>-->
+                <!--</div>-->
+            <!--</li>-->
+        </ul>
+    </article>
+</div>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var deviceWidth = $('body').width();
+        $('nav li').each(function (index, item) {
+            if ($(this).find('a').html().split('').length > 2) {
+                $(this).width(deviceWidth / 3);
+            } else {
+                $(this).width(deviceWidth / 6);
+            }
+        });
+    });
+</script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
